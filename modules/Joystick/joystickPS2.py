@@ -13,8 +13,10 @@ import RPi.GPIO as GPIO
 import time
 import socket
 import json
+import os
 
-UDP_IP = "192.168.0.112"
+UDP_IP = os.getenv('GOPIGO_IP')
+# UDP_IP = "192.168.0.112"
 UDP_PORT = 5005
 
 print("UDP target IP:", UDP_IP)
