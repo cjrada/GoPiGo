@@ -1,4 +1,4 @@
-FROM cjrada/python-azureiot-arm32v7:latest
+FROM cjrada/python-rpi-azureiot-arm32v7:latest
 
 # WORKDIR /app
 
