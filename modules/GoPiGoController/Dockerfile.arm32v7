@@ -1,0 +1,10 @@
+FROM cjrada/python-azureiot-arm32v7:latest
+
+# WORKDIR /app
+
+# COPY requirements.txt ./
+# RUN pip install -r requirements.txt
+
+COPY ./modules/GoPiGoController ./
+
+CMD [ "python3", "-u", "./main.py" ]
